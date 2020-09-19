@@ -4,7 +4,7 @@
     padding: 10px;
     border-radius: 25px;
   }
-
+  
   #main-box {
     border: 5px solid black;
     width: 300px;
@@ -15,27 +15,28 @@
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
   }
-#plus-button {
-  position : absolute;
-  right : 50px;
-  padding: 15px;
-  down : 4%;
-  top : 33px;
-}
-h3{
-  position : relative;
-  top : -3px;
-}
-#main{
-  width : fit-content;
-  margin-left : 170px;
-  margin-top : 5px;
-}body {
+  #plus-button {
+    position: absolute;
+    right: 50px;
+    padding: 15px;
+    down: 70%;
+    top: 33px;
+  }
+  h3 {
+    position: relative;
+    top: -3px;
+  }
+  #main {
+    width: fit-content;
+    margin-left: 115px;
+    margin-top: 5px;
+  }
+  body {
     background: #333333;
-}
-.text-line {
+  }
+  .text-line {
     background-color: transparent;
     color: black;
     outline: none;
@@ -45,5 +46,9 @@ h3{
     border-right: none;
     border-bottom: solid black 2px;
     padding: 3px 10px;
-    margin-left : -150px;
-}
+    margin-left: -100px;
+  }
+  #favicon-image {
+    border-radius: 50%;
+  }
+  
