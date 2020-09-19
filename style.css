@@ -48,5 +48,9 @@
     padding: 3px 10px;
     margin-left: -100px;
   }
-
-  
+  #favicon-image {
+    border-radius: 50%;
+  }
+  #trash:hover {
+     
+  }
