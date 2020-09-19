@@ -5,7 +5,7 @@
     <title>Clipto.js - Login</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/public/assets/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -13,17 +13,17 @@
       crossorigin="anonymous"
     />
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">Clipto.js</a>
+  <a class="navbar-brand" href="/">Clipto.js</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="login.html">Login <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/users/login">Login <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="signup.html">Signup</a>
+        <a class="nav-link" href="/users/signup">Signup</a>
       </li>
     </ul>
   </div>
@@ -31,11 +31,14 @@
 
 <!-- As a heading -->
     <div class="container">
-      <form>
+      <form action="/users/login" method = "POST">
+        <div class="form-group">
+        <p><%= typeof errors != 'undefined' ? errors[0].msg : '' %></p>
           <div class="form-group">
             <label for="exampleInputEmail1">User Name : </label>
             <input
               type="username"
+              name="username"
               class="form-control"
               id="username"
               aria-describedby="emailHelp"
@@ -48,22 +51,14 @@
               <input
                 type="password"
                 class="form-control"
+                name="password"
                 id="exampleInputPassword1"
               />
               <small id="passwordHelp" class="form-text text-muted"
                 ><center>We'll never share your password with anyone else</center></small
                 >
             </div>
-      <div class="form-group form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="exampleCheck1"
-              />
-              <label class="form-check-label" for="exampleCheck1"
-                >Keep me signed in</label
-              >
-            </div>
+    
             <button type="submit" class="btn btn-primary">Log In</button>
           </div>
                 </form>
@@ -71,7 +66,7 @@
 
 
     
-    <script src="/script.js" defer></script>
+    <!-- <script src="/script.js" defer></script> -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
