@@ -137,9 +137,11 @@ var userId = $("#userId").val();
 // console.log(userId);
 placeCards(userId);
 
-$(document).ready(function () {
+$(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
-});
+})
+
+
 
 function copyToClipboard(event) {
   var key = event.path[2].accessKey||event.path[3].accessKey;
