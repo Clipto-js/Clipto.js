@@ -6,6 +6,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/public/assets/dashboardStyle.css" />
@@ -24,42 +25,16 @@
       <h3>
         Clipto.js
       </h3>
-      <a href="#" data-toggle="tooltip" title="Add some more info" id="plus-button" class="btn btn-info btn-lg">
+      <input id="userId" type="hidden" value="<%= typeof userId != 'undefined' ? userId : '' %>">
+      
+      <a onclick="addEmptyBlock()" data-toggle="tooltip" title="Add some more info" id="plus-button" class="btn btn-info btn-lg">
         <span class="glyphicon glyphicon-plus"></span>
       </a>
     </div>
-    <div id="main-box">
-      <div id="main">
-        <a href="#" data-toggle="tooltip" title="Delete" id = "trash" class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-trash"></span>
-        </a>
-        <a href="#" data-toggle="tooltip" title="Copy" class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-copy"></span>
-        </a>
-        <a href="#" data-toggle = "tooltip" title="Save information" class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-duplicate"></span>
-        </a>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <center>
-          <div id="input_field">
-            <input id = "category" class="text-line" type length="10" placeholder = "Category"/>
-            <br />
-            <br />
-            <br />
-            <input id = "category-detail" class="text-line" type length="10" placeholder = "Detail of the Category"/>
-          </div>
-        </center>
-      </div>
+    <div id="main-data">
+    
+    
     </div>
-<script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
+<script src='/public/dashboardScript.js' ></script>
   </body>
 </html>

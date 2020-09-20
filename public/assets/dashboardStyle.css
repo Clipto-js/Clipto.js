@@ -5,17 +5,18 @@
     border-radius: 25px;
   }
   
-  #main-box {
+  .main-box {
     border: 5px solid black;
     width: 300px;
     height: 400px;
     border-radius: 10px;
     background-color: yellow;
-    position: absolute;
-    top: 50%;
+    float:left;
+    /* position: absolute; */
+    /* top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
   }
   #plus-button {
     position: absolute;

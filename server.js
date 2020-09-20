@@ -54,7 +54,6 @@ app.post('/saveUserData',async(req,res)=>{
         TableName:'DataTable',
         Item:{
             userId:data.userId,
-            name:data.name,
             cardData:data.cardData
         }
     }
