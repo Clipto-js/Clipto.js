@@ -32,3 +32,7 @@
 
 #### Designing Team
 * HariOm Dvivedi
+
+### Links
+* Devfolio submission: https://devfolio.co/submissions/cliptojs
+* Youtube video: https://www.youtube.com/watch?v=di3Wis-vs0o
