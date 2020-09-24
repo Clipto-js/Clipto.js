@@ -21,8 +21,11 @@
 * wondersharefilmora9
 
 ### Collaborators
-* Neev Shah (front end team
-* Pradeep Singh (back end team)
-* Dhairya Khemka (front end team)
-* Manav Bansal (front end team)
-* HariOm Dvivedi (designer)
+FRONT-END TEAM
+    * Neev Shah 
+    * Dhairya Khemka
+    * Manav Bansal
+BACK-END TEAM
+    * Pradeep Singh
+DESIGNER TEAM
+    * HariOm Dvivedi
