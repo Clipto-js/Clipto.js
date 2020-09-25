@@ -12,13 +12,12 @@
 
 #### Technologies:
 * Express.js
-* DynamondDB
+* Dymanodb
 * Javascript
 * Html
 * CSS
 * Boostrap
 * Figma
-* wondersharefilmora9
 
 ### Collaborators
 
